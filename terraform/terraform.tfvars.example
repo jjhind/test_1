@@ -1,0 +1,32 @@
+# AWS Configuration
+aws_region  = "us-east-1"
+environment = "prod"
+
+# Lambda Configuration
+lambda_function_name = "website-item-monitor"
+lambda_timeout       = 300
+lambda_memory_size   = 256
+
+# Scheduling (check hourly)
+# Options:
+#   - rate(1 hour)    - every hour
+#   - rate(30 minutes) - every 30 minutes
+#   - cron(0 * * * ? *) - every hour (cron format)
+#   - cron(0 9 * * ? *) - every day at 9 AM UTC
+schedule_expression = "rate(1 hour)"
+
+# Website Configuration
+website_name = "Sofas and Stuff Outlet"
+website_url  = "https://www.sofasandstuff.com/outlet"
+
+# Email Configuration
+email_enabled  = "true"
+smtp_server    = "smtp.gmail.com"
+smtp_port      = "587"
+from_email     = "your-email@gmail.com"
+email_password = "your-app-password"
+to_email       = "notification-recipient@gmail.com"
+
+# Optional: SNS Alerts
+enable_sns_alerts = false
+alert_email       = ""

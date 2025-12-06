@@ -10,13 +10,48 @@ A Python application that monitors websites for new items and sends email notifi
 - ⏰ **Flexible Scheduling** - Check hourly, daily, or at any custom interval
 - 📊 **Detailed Logging** - Track all monitoring activity with timestamped logs
 - 🎯 **Customizable Parsing** - Easy to adapt for different website structures
+- ☁️ **Cloud-Ready** - Deploy to AWS Lambda with included Terraform configuration
 
-## Prerequisites
+## Deployment Options
+
+This application can be run in two ways:
+
+### Option 1: AWS Lambda (Recommended - Free!)
+
+Deploy to AWS Lambda for serverless, cost-free monitoring:
+- **Cost**: $0/month (stays within AWS free tier)
+- **Zero maintenance** - No servers to manage
+- **Automatic scheduling** - EventBridge triggers
+- **Terraform + GitHub Actions** - Automated deployment
+
+**[→ See AWS Lambda Deployment Guide](DEPLOYMENT.md)**
+
+Quick start:
+```bash
+./scripts/build_lambda.sh
+cd terraform
+terraform init
+terraform plan
+terraform apply
+```
+
+### Option 2: Self-Hosted (Local/VPS)
+
+Run on your own machine or server:
+- Local computer or Raspberry Pi
+- Digital Ocean droplet ($4-6/month)
+- Any Linux/Mac server
+
+**[→ See self-hosted instructions below](#installation)**
+
+---
+
+## Prerequisites (Self-Hosted)
 
 - Python 3.7 or higher
 - pip (Python package manager)
 
-## Installation
+## Installation (Self-Hosted)
 
 1. **Clone the repository**
    ```bash
@@ -84,7 +119,7 @@ If using Gmail, you'll need to:
 
 **Note:** Never commit `config.json` with real credentials to version control!
 
-## Usage
+## Usage (Self-Hosted)
 
 ### Run Continuously (Scheduled Monitoring)
 

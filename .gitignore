@@ -42,3 +42,16 @@ ENV/
 # OS
 .DS_Store
 Thumbs.db
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
+terraform/tfplan
+terraform/*.zip
+terraform/terraform.tfvars
+
+# Lambda
+lambda_package/
+response.json
