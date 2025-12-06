@@ -16,8 +16,8 @@ lambda_memory_size   = 256
 schedule_expression = "rate(1 hour)"
 
 # Website Configuration
-website_name = "Sofas and Stuff Outlet"
-website_url  = "https://www.sofasandstuff.com/outlet"
+website_name = "Sofas and Stuff Discount Sofas"
+website_url  = "https://sofasandstuff.com/discount-sofas"
 
 # Email Configuration
 email_enabled  = "true"

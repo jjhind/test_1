@@ -1,6 +1,6 @@
 {
-  "website_name": "Sofas and Stuff Outlet",
-  "website_url": "https://www.sofasandstuff.com/outlet",
+  "website_name": "Sofas and Stuff Discount Sofas",
+  "website_url": "https://sofasandstuff.com/discount-sofas",
   "check_interval_hours": 1,
   "state_file": "items_state.json",
   "email": {
